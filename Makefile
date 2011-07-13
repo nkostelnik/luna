@@ -34,4 +34,8 @@ update:
 clean:
 	rm -f luna test_runner $(OBJ) $(TEST_OBJ)
 
+install:luna
+	install luna $(PREFIX)/bin
+
+
 .PHONY: clean update test
